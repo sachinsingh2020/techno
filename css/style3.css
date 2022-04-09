@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 51, 153);
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 600;
+}
+
+
+.body-container {
+    text-align: center;
+    margin-top: 18rem;
+
+}
+
+.body-container h1 {
+    margin-top: 3rem;
+    font-size: 6rem;
+    font-weight: 400;
+    color: rgb(255, 102, 0);
+
+}
+
+.hurray {
+    transition: all .4s ease-in-out;
+    animation: from-up 1s forwards ease-in-out;
+}
+
+@keyframes from-up {
+    from {
+        transform: translateY(-500%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.successfully {
+    transition: all .4s ease-in-out;
+    animation: from-left 1s forwards ease-in-out;
+}
+
+@keyframes from-left {
+    from {
+        transform: translateX(-500%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.emoji {
+    margin-top: 6rem;
+    transition: all .4s ease-in-out;
+    animation: from-right 1s forwards ease-in-out;
+}
+
+@keyframes from-right {
+    from {
+        transform: translateX(500%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.emoji i {
+    font-size: 8rem;
+    color: rgb(255, 102, 0);
+    margin: 0 2rem;
+}
+
+.body-container button {
+    margin: auto;
+    margin-top: 6rem;
+    font-size: 1.8rem;
+    transition: all .4s ease-in-out;
+    animation: from-down 1s forwards ease-in-out;
+}
+
+@keyframes from-down {
+    from {
+        transform: translateY(500%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1000px) {
+    .body-container h1 {
+        font-size: 5rem;
+    }
+
+    .emoji i {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .body-container h1 {
+        font-size: 4rem;
+    }
+
+    .emoji i {
+        font-size: 6rem;
+    }
+}

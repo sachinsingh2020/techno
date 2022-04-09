@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ############## utility classes #############  */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 600;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ############## member-1 ############  */
+.form-container {
+    background: url(../images/member-img-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.all-form {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-form .form-heading {
+    border-bottom: 4px solid white;
+    margin: 0 10rem;
+    color: white;
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 500;
+    margin-top: 4rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.all-form-container input[type="text"] {
+    height: 5rem;
+    border: none;
+    border-radius: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-left: 1.5rem;
+    margin: 0 5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.all-form-container input[type="text"]:focus {
+    outline: none;
+}
+
+.team-name,
+.utr {
+
+    max-width: 700px;
+    width: 90%;
+    margin-right: 4rem;
+}
+
+.all-form-container button {
+    margin-top: 4rem;
+    font-size: 2rem;
+    position: absolute;
+    bottom: -10rem;
+}
+
+@media (max-width: 1190px) {
+    .all-form-container button {
+        bottom: -7rem;
+    }
+
+}
+
+@media (max-width: 970px) {
+    .all-form-container input[type="text"] {
+        height: 4rem;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+
+    .all-form-container button {
+        margin-top: 2.5rem;
+        font-size: 1.6rem;
+        bottom: -10rem;
+    }
+}
+
+@media (max-width: 957px) {
+    .all-form .form-heading {
+        font-size: 3rem;
+        margin: 0 7rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .all-form .form-heading {
+        margin: 0 3rem;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .all-form-container input[type="text"] {
+        max-width: 800px;
+        margin: 0;
+        margin-top: 2rem;
+        width: 95%;
+    }
+
+    .all-form {
+        right: 9rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .all-form .form-heading {
+        font-size: 2rem;
+    }
+
+    .all-form-container button {
+        margin-top: 2.5rem;
+    }
+
+    .all-form-container input[type="text"] {
+        height: 4rem;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+}
